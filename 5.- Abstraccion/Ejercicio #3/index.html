@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas por Especialidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4 display-5 fw-bold">Tareas por Especialidad</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Tarea de <span class="badge bg-info">Ingeniero</span></h3>
+                    <button class="btn btn-primary w-100" onclick="realizarTareaIngeniero()">Realizar Tarea</button>
+                    <div class="alert alert-success mt-3" id="resultadoIngeniero" role="alert"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Tarea de <span class="badge bg-danger">Doctor</span></h3>
+                    <button class="btn btn-primary w-100" onclick="realizarTareaDoctor()">Realizar Tarea</button>
+                    <div class="alert alert-success mt-3" id="resultadoDoctor" role="alert"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

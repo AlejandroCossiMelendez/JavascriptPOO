@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas Geométricas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4 display-5 fw-bold">Cálculo de Área - Formas Geométricas</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Área del <span class="badge bg-primary">Cuadrado</span></h3>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Lado</span>
+                        <input type="number" id="ladoCuadrado" class="form-control" placeholder="Ingrese el lado" min="0">
+                        <button class="btn btn-success" onclick="calcularAreaCuadrado()">Calcular</button>
+                    </div>
+                    <div class="alert alert-info" id="resultadoCuadrado" role="alert"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Área del <span class="badge bg-danger">Círculo</span></h3>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Radio</span>
+                        <input type="number" id="radioCirculo" class="form-control" placeholder="Ingrese el radio" min="0">
+                        <button class="btn btn-success" onclick="calcularAreaCirculo()">Calcular</button>
+                    </div>
+                    <div class="alert alert-info" id="resultadoCirculo" role="alert"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
